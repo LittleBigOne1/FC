@@ -57,7 +57,9 @@ self.addEventListener('fetch', (event) => {
 
       return fetch(fetchRequest).then((res) => {
         if (
-          (!res || res.status !== 200 || res.type !== 'basic') 
+          !res ||
+          res.status !== 200 ||
+          res.type !== 'basic'
           // && !res.includes('/node_modules/')
         ) {
           return res;
