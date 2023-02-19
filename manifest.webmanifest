@@ -3,7 +3,7 @@
   "background_color": "#242424",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/allcards/",
+  "start_url": "https://the-flash-cards-app.netlify.app/",
   "short_name": "FC",
   "name": "Flash Cards",
   "icons": [
