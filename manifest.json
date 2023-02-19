@@ -4,20 +4,20 @@
   "background_color": "black",
   "theme_color": "black",
   "orientation": "portrait",
-  "start_url": ".",
+  "start_url": "/allcards/",
   "display": "standalone",
   "icons": [
     {
-      "src": "assets/logo512.png",
+      "src": "/src/assets/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "assets/logo192.png",
+      "src": "/src/assets/logo192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
     }
   ],
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
