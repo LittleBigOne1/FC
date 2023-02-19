@@ -1,5 +1,5 @@
 const BASE = location.origin;
-const CACHE_VERSION = 'V1';
+const CACHE_VERSION = 'V2';
 // const CACHED_FILES = ['/index.html'];
 
 self.addEventListener('install', (event) => {
@@ -36,9 +36,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (
-    event.request.url.startsWith('chrome-extension://')
-    // ||
-    // event.request.url.includes('/node_modules/')
+    event.request.url.startsWith('chrome-extension://') ||
+    event.request.url.includes('/node_modules/')
   ) {
     return;
   }
